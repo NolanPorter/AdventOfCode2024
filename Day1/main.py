@@ -1,3 +1,7 @@
+'''
+Sort the numbers, then sequentially compare the distance between left[i] and right[i]
+Add up those distances and that's the answer.
+'''
 def part1() -> int:
     val = 0
     left = []
@@ -16,6 +20,11 @@ def part1() -> int:
 
     return val
 
+'''
+Map the values of the right list to the number of times they appear, i.e. {1: 12, 2: 3}...
+Loop over every value in left list, multiply left value by the number of times it appears in the right
+Add up those multiplied values and that is the answer.
+'''
 def part2() -> int:
     val = 0
     left = []
