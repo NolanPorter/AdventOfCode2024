@@ -1,5 +1,3 @@
-import itertools
-
 def part1() -> int:
     val = 0
     valid_updates = save_relevant_updates(True)

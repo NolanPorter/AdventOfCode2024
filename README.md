@@ -7,19 +7,21 @@ I'm going to try my best to go as far as I can in Advent of Code 2024!
 ```
 def part1() -> int:
     val = 0
-    with open('input.txt') as f:
-        for line in f.readlines():
-            val += 1
     return val
 
 def part2() -> int:
     val = 0
-    with open('input.txt') as f:
-        for line in f.readlines():
-            val += 1
     return val
 
+def parse_input(value):
+    global input_rows
+    with open(f"input{value}.txt") as f:
+        for line in f.readlines():
+            input_rows.append(line.strip())
 
+
+input_rows = []
+parse_input(2)
 print(part1())
 print(part2())
 ```
